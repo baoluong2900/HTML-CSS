@@ -1,12 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+
+	<meta name="description" content="This í my website description">
+	<meta name="keywords" content="web development, web desgin">
+
+	<!-- DO NOT INDEX PAGE -->
+	<meta name="robots" content="NOINDEX, NOFOLLOW">
+
+	<title>Heading, Paragraphs, Typography</title>
 </head>
+
 <body>
-	Hello World
+	<!-- This is a comment-->
+	<p> Hello World</p>
+
+	<!--Headings-->
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<!-- Paragraph-->
+	<strong>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</strong>
+	<!--Line Break-->
+	<br>
+	<em>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</em>
+	<!-- Horizontal Rule-->
+	<hr>
+	<u>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</u>
+	<b>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</b>
+	<del>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</del>
+
+	<!-- External link -->
+	<p>
+		<a href="http://google.com">Click For Google</a>
+	</p>
+	<p>
+		<!--Open new tab-->
+		<a href="http://google.com" target="_blank">Click For Google</a>
+	</p>
+
+	<!--Internal link-->
+	<p>
+		<a href="/1.HTMLBasics/1_BasicLayout.html">Link tab</a>
+	</p>
+
+	<!--Local image-->
+	<img src="/1.HTMLBasics/images/cat.jpg" alt="My image" width="200">
+
+	<!--Remote image-->
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg"
+		alt="My image 2" width="200">
+
+	<!--Unoredered lists-->
+	<ul style="list-style: square;">
+		<li>
+			item 1
+		</li>
+		<li>
+			item 2
+		</li>
+		<li>
+			item 3
+		</li>
+		<li>
+			item 4
+		</li>
+		<li>
+			item 5
+		</li>
+	</ul>
+
+	<!--Ordered Lists-->
+	<ol type="I">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+	</ol>
+
+	<!--Nested lists-->
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2
+			<ul>
+				<li>Nested item 1</li>
+				<li>Nested item 2</li>
+			</ul>
+		</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+	</ul>
+
+	<!--Table-->
+	<table>
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Bao</td>
+				<td>Luong Viet</td>
+				<td>Baoluong0209@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Bao</td>
+				<td>Luong Viet</td>
+				<td>Baoluong0209@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Bao</td>
+				<td>Luong Viet</td>
+				<td>Baoluong0209@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Bao</td>
+				<td>Luong Viet</td>
+				<td>Baoluong0209@gmail.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!--Forms & Input-->
+	<form>
+
+
+		<!--Text-->
+		<div>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name">
+		</div>
+
+		<!--Email-->
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="enter an email">
+		</div>
+
+		<!--Textarea-->
+		<div>
+			<label for="message">Message</label>
+			<!-- <textarea name="message" id="message" value="" cols="50" rows="5"> -->
+		</div>
+
+		<!--Select-->
+		<div>
+			<label for="sex">Sex</label>
+			<select name="sex" id="sex">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Ither</option>
+			</select>
+		</div>
+		
+		<!--Number-->
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age">
+		</div>
+
+		<!--Date-->
+		<div>
+			<label for="birthdate">Birthdate</label>
+			<input type="date" name="birthdate" id="birthdate">
+		</div>
+
+		<!--Radio-->
+		<div>
+			<label for="membership">Membership</label>
+			<input type="radio" name="membership" id="membership" value="simple">Simple
+			<input type="radio" name="membership" id="membership" value="standard" checked>Standard
+			<input type="radio" name="membership" id="membership" value="super">Super
+		</div>
+
+		<!--Checkbox-->
+		<div>
+			<label for="likes">I Like.</label>
+			<input type="checkbox" name="likes" id="likes" value="car">Car
+			<input type="checkbox" name="likes" id="likes" value="bike" checked>Bike
+			<input type="checkbox" name="likes" id="likes" value="boat">Boat
+		</div>
+
+		<!--Input submit-->
+		<input type="submit" value="Submit">
+
+		<!--Button submit-->
+		<button type="submit">Submit</button>
+
+		<!--Button reset-->
+		<button type="reset">Reset</button>
+	</form>
+
+
 </body>
+
 </html>
