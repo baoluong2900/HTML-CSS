@@ -13,6 +13,14 @@
 	<meta name="robots" content="NOINDEX, NOFOLLOW">
 
 	<title>Heading, Paragraphs, Typography</title>
+	<style>
+		.card{
+			border: 1px solid #ccc;
+			background: #f4f4f4;
+			padding: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 
 <body>
@@ -212,6 +220,62 @@
 		<!--Button reset-->
 		<button type="reset">Reset</button>
 	</form>
+
+	<!-- Inline & Block-->
+	<p style="border: 2px greenyellow solid">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		 Nobis, eligendi nemo? Unde provident ipsam quibusdam. Vero,
+		asperiores error <strong> autem saepe necessitatibus </strong>vitae modi eos tempore,
+		spernatur neque ipsum repellendus fugit.
+	</p>
+
+	<!--Div, Span, Id, Class-->
+	<div id="main-header">
+		<h1>My Website</h1>
+		<p>A site about me</p>
+	</div>
+	<ul id="main-nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div id="about" class="card">
+		<h3>About</h3>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti rem beatae consequuntur. Impedit quisquam amet in nihil, fugit rerum repellendus. Hic aspernatur necessitatibus id quidem incidunt suscipit dignissimos eaque.
+		</p>
+	</div>
+
+	<!--Entities-->
+	<!--Non breaking space-->
+	<p>Lorem ipsum dolor &nbsp; sit amet.</p>
+
+	<!--Greater than and less than-->
+	<p>5  &gt; 2</p>
+	<p>5  &lt; 2</p>
+	<p>5  &#60; 2</p>
+	<p>5  &#62; 2</p>
+
+	<!--Copyright-->
+	<p>&copy;</p>
+	<p>&reg;</p>
+
+	<!--Currency-->
+	<p>&cent;</p>
+	<p>&dollar;</p>
+	<p>&yen;</p>
+	<p>&pound;</p>
+
+	<!--Suits-->
+	<p>&spades;</p>
+	<p>&clubs;</p>
+	<p>&hearts;</p>
+	<p>&diams;</p>
+
+	<!--Coupter code-->
+	<code>
+		&lt; ?'php echo 'Hello' ? &gt;
+	</code>
+
+	<p>Save the file by pressing  <kbd>Ctrt + S</kbd></p>
 
 
 </body>
